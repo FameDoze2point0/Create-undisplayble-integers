@@ -90,7 +90,7 @@ graph TD;
 <img src="https://user-images.githubusercontent.com/106914120/172239623-f9a8bc53-2eec-4a8e-a44e-eaf3b2bbf861.png">
 </div>
 
-To transform our tree in an AVL tree, we need to some rotations when we add a big integer (since an AVL tree try to minimize the height of the tree that we can see above thanks to "requilibre"). To do that, we need a function which compare two big integers, and rotation function (left, right, left-right, right-left).
+To transform our tree in an AVL tree, we need to some rotations when we add a big integer (since an AVL tree try to minimize the height of the tree that we can see above thanks to "requilibre"). To do that, we need a function which compares two big integers, and rotation function (left, right, left-right, right-left).
 
 <table align="center">
   <tr>
@@ -110,3 +110,16 @@ To transform our tree in an AVL tree, we need to some rotations when we add a bi
 </table>
 
 <h2> Creating hash table of big integer</h2>
+
+This final part is by the way the easier part. The first step is to create an array of big integer. Then when we add an element, we will calculate a key in order to calculate an index. Moreover, we have a constant called "theta", it modify the distribution of big integers. So to have the best distribution, we need to have a complex key and a special constant for theta (either $\frac{1+\sqrt{5}}{2}$ or $\frac{\sqrt{5}- 1}{2}$ because it's the golden ratio which have the best distribution).
+
+<table align="center">
+  <tr>
+    <td>Key calculation function</td>
+    <td>Index calculation function</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/106914120/172246436-9c772dc7-20c5-4dc4-8423-fb21eb7b76a6.png"></td>
+    <td><img src="https://user-images.githubusercontent.com/106914120/172246462-81410de5-be4a-42c3-a4a9-d0720e9c0a9b.png"></td>
+  </tr>
+</table>
