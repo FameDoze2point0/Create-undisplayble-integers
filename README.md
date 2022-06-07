@@ -1,6 +1,6 @@
 <h1> Create integers that cannot be displayed </h1>
 
-In this repository, you will see a C project that I had to do during my 2nd year of Bachelor Degree. This project implements list, AVL tree and hash table. <br>
+In this repository, you will see a C project that @fati1905 and I had to do during our 2nd year of Bachelor Degree. This project implements list, AVL tree and hash table. <br>
 
 You will find 3 parts :<br>
 
